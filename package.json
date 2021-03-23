@@ -1,0 +1,8 @@
+{
+  "name": "drawio-twemoji-library",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "emoji-datasource-twitter": "^6.0.1",
+    "twemoji": "^13.0.2"
+  }
+}
