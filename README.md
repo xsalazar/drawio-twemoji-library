@@ -8,19 +8,19 @@ The latest version of these libraries was generated with [Emoji v13.0](https://u
 
 Clone the repository
 
-```shell
+```bash
 git clone https://github.com/xsalazar/drawio-twemoji-library.git
 ```
 
 Install packages
 
-```shell
+```bash
 npm install
 ```
 
 Run the script
 
-```shell
+```bash
 node index.js
 ```
 
@@ -52,3 +52,7 @@ Download the XML library you wish to use from the [libraries](./libraries) in th
 Import them into your application through `File > Open Library from > Device...` and upload the file.
 
 Further instructions here: https://drawio.freshdesk.com/support/solutions/articles/16000067790-how-to-create-and-use-custom-libraries-
+
+### VSCode Support
+
+To import these libraries into the [VSCode drawio plugin](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio), load a local diagram, import via `File > Import`, and choose the local library XML file.
