@@ -1,5 +1,9 @@
 # draw.io / diagrams.net Twemoji Icon Libraries
 
+This repository contains custom libraries to enable importing Twitter's [twemoji](https://github.com/twitter/twemoji) images into your diagrams.
+
+The latest version of these libraries was generated with [Emoji v13.0](https://unicode.org/emoji/charts-13.0/emoji-list.html).
+
 ## Install
 
 Clone the repository
@@ -37,6 +41,9 @@ The following links will quick-load the libraries into a new diagram in your bro
 - [Objects](https://app.diagrams.net/?splash=0&clibs=Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fxsalazar%2Fdrawio-twemoji-library%2Fmain%2Flibraries%2FObjects.xml)
 - [People and Body](https://app.diagrams.net/?splash=0&clibs=Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fxsalazar%2Fdrawio-twemoji-library%2Fmain%2Flibraries%2FPeople%2520and%2520Body.xml)
 - [Skin Tones](https://app.diagrams.net/?splash=0&clibs=Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fxsalazar%2Fdrawio-twemoji-library%2Fmain%2Flibraries%2FSkin%2520Tones.xml)
+- [Smileys and Emotion](https://app.diagrams.net/?splash=0&clibs=Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fxsalazar%2Fdrawio-twemoji-library%2Fmain%2Flibraries%2FSmileys%2520and%2520Emotion.xml)
+- [Symbols](https://app.diagrams.net/?splash=0&clibs=Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fxsalazar%2Fdrawio-twemoji-library%2Fmain%2Flibraries%2FSymbols.xml)
+- [Travel and Places](https://app.diagrams.net/?splash=0&clibs=Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fxsalazar%2Fdrawio-twemoji-library%2Fmain%2Flibraries%2FTravel%2520and%2520Places.xml)
 
 ### Manual Import
 
