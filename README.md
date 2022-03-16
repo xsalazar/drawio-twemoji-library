@@ -2,8 +2,6 @@
 
 This repository contains custom libraries to enable importing Twitter's [twemoji](https://github.com/twitter/twemoji) images into your diagrams.
 
-The latest version of these libraries was generated with [Emoji v13.1](https://unicode.org/emoji/charts-13.1/emoji-list.html).
-
 ## Install
 
 Clone the repository
