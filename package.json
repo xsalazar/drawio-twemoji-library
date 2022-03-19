@@ -2,7 +2,7 @@
   "name": "drawio-twemoji-library",
   "dependencies": {
     "axios": "^0.26.1",
-    "emoji-datasource-twitter": "^7.0.2",
+    "emoji-datasource-twitter": "^14.0.0",
     "twemoji": "^14.0.1"
   }
 }
