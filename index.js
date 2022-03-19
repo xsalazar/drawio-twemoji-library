@@ -31,7 +31,10 @@ async function getData() {
   for (let i = 0; i < emojis.length; i++) {
     const emoji = emojis[i];
     try {
-      let response = await axios.get(emoji.url, { responseType: "stream" });
+      let response = await axios.get(emoji.url, {
+        responseType: "stream",
+        timeout: 5000,
+      });
       response.data.pipe(
         fs.createWriteStream(`${emoji.path}/${emoji.shortName}.svg`)
       );
