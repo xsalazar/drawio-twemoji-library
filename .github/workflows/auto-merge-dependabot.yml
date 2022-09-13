@@ -9,27 +9,27 @@ permissions:
   contents: write
 
 jobs:
-  AutoMerge:
+  auto-merge:
     runs-on: ubuntu-latest
 
     # Checking the actor will prevent your Action run failing on non-Dependabot PRs
     if: ${{ github.actor == 'dependabot[bot]' }}
 
     steps:
-      - name: Fetch Dependabot metadata
+      - name: Fetch Dependabot PR metadata 🎣
         id: dependabot-metadata
         uses: dependabot/fetch-metadata@v1.1.0
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
 
-      - name: Approve a PR
+      - name: Approve Dependabot PR ✅
         if: ${{steps.dependabot-metadata.outputs.update-type == 'version-update:semver-minor' || steps.dependabot-metadata.outputs.update-type == 'version-update:semver-patch'}}
         run: gh pr review --approve "$PR_URL"
         env:
           PR_URL: ${{github.event.pull_request.html_url}}
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
-      - name: Enable auto-merge for Dependabot PRs
+      - name: Auto-merge Dependabot PR 🪄
         if: ${{steps.dependabot-metadata.outputs.update-type == 'version-update:semver-minor' || steps.dependabot-metadata.outputs.update-type == 'version-update:semver-patch'}}
         run: gh pr merge --merge "$PR_URL"
         env:
