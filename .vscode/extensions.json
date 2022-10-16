@@ -1,7 +1,3 @@
 {
-  "recommendations": [
-    "esbenp.prettier-vscode",
-    "hediet.vscode-drawio",
-    "ms-vscode-remote.remote-containers"
-  ]
+  "recommendations": ["hediet.vscode-drawio"]
 }
