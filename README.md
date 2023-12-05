@@ -1,6 +1,6 @@
 # draw.io / diagrams.net Twemoji Icon Libraries
 
-This repository contains custom libraries to enable importing Twitter's [twemoji](https://github.com/twitter/twemoji) images into your diagrams.
+This repository contains custom libraries to enable importing Twitter's [twemoji](https://github.com/jdecked/twemoji) images into your diagrams.
 
 ## Install
 
