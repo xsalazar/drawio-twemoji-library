@@ -49,7 +49,7 @@ Download the XML library you wish to use from the [libraries](./libraries) in th
 
 Import them into your application through `File > Open Library from > Device...` and upload the file.
 
-Further instructions here: https://drawio.freshdesk.com/support/solutions/articles/16000067790-how-to-create-and-use-custom-libraries-
+Further instructions here: https://www.drawio.com/blog/public-custom-libraries
 
 ### VSCode Support
 
