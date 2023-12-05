@@ -1,5 +1,5 @@
 const emojiData = require("emoji-datasource-twitter/emoji_pretty.json");
-const twemoji = require("twemoji");
+const twemoji = require("@twemoji/api");
 const axios = require("axios");
 const fs = require("fs");
 
