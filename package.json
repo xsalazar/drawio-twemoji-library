@@ -3,6 +3,6 @@
   "dependencies": {
     "@twemoji/api": "^15.0.3",
     "axios": "^1.6.7",
-    "emoji-datasource-twitter": "^15.1.1"
+    "emoji-datasource-twitter": "^15.1.2"
   }
 }
