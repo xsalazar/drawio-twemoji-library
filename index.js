@@ -14,13 +14,28 @@ async function getData() {
         if (err) throw err;
       });
 
+      // Manually fix up ♾️
+      if (emoji.unified === "267E-FE0F") {
+        emoji.unified = "267E";
+      }
+
       // Parse emoji and save URL
       twemoji.parse(
         emoji.unified.split("-").map(twemoji.convert.fromCodePoint).join(""),
         {
+          ext: "svg",
           callback: function (iconId, options) {
             url = `${options.base}svg/${iconId}.svg`;
-            emojis.push({ url: url, shortName: emoji.short_name, path: path });
+
+            if (!iconId) {
+              console.log(`${emoji.unified} did not work!`);
+            } else {
+              emojis.push({
+                url: url,
+                shortName: emoji.short_name,
+                path: path,
+              });
+            }
           },
         }
       );
@@ -30,7 +45,7 @@ async function getData() {
   for (let i = 0; i < emojis.length; i++) {
     const emoji = emojis[i];
     try {
-      console.log(`Requesting ${emoji.url}`);
+      // console.log(`Requesting ${emoji.url}`);
 
       let response = await axios.get(emoji.url, {
         responseType: "stream",
@@ -41,7 +56,9 @@ async function getData() {
         fs.createWriteStream(`${emoji.path}/${emoji.shortName}.svg`)
       );
     } catch (e) {
-      console.log(`Failed to get ${emoji.short_name} at ${emoji.path}`);
+      console.log(
+        `Failed to get ${emoji.shortName} at ${emoji.path} for ${emoji.url}`
+      );
     }
   }
 }
