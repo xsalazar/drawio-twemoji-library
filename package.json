@@ -1,7 +1,7 @@
 {
   "name": "drawio-twemoji-library",
   "dependencies": {
-    "@twemoji/api": "^16.0.1",
+    "@twemoji/api": "^17.0.2",
     "axios": "^1.13.2",
     "emoji-datasource-twitter": "^16.0.0"
   }
