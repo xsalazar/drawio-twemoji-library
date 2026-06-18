@@ -5,17 +5,20 @@ updates:
     directory: "/"
     labels:
       - "dependabot :robot:"
-    reviewers:
-      - "xsalazar"
     schedule:
       interval: "daily"
+    cooldown:
+      default-days: 14
+      semver-major-days: 30
+      semver-minor-days: 7
+      semver-patch-days: 3
 
   # GitHub Actions
   - package-ecosystem: "github-actions"
     directory: "/"
     labels:
       - "dependabot :robot:"
-    reviewers:
-      - "xsalazar"
     schedule:
       interval: "daily"
+    cooldown:
+      default-days: 14
